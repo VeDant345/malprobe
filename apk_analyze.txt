@@ -1,0 +1,2023 @@
+
+
+  .-------------------------------------.
+  | [____DOWNLOADING FREE RTX 3090____] |
+  |  _________________________________  |
+  | |:::::::::::::::::60%|            | |
+  |  """""""""""""""""""""""""""""""""  |
+  |_____________________________________|
+
+
+[*] Analyzing: 463f9ed427c5d003dbe5d0c79ec0046f7f7b4b73d412588661bf86d3aca8088a.apk
+[*] Target OS: Android
+
+[*] General Informations about 463f9ed427c5d003dbe5d0c79ec0046f7f7b4b73d412588661bf86d3aca8088a.apk
+>>>> App Name: KissLand
+>>>> Package Name: com.drnull.v5
+
+[*] Sending query to Google Play Store about target application.
+>>>> Google Play Store: Not Found
+
+>>>> SDK Version: 34
+>>>> Main Activity: com.drnull.v5.MainActivity
+>>>> Signatures:
+>> META-INF/KEY0.RSA
+ 
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━┓
+┃                         Permissions                          ┃ State ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━┩
+│       android.permission.FOREGROUND_SERVICE_DATA_SYNC        │ Info  │
+│          com.google.android.c2dm.permission.RECEIVE          │ Info  │
+│                 android.permission.WAKE_LOCK                 │ Info  │
+│               android.permission.READ_CONTACTS               │ Risky │
+│                 android.permission.READ_SMS                  │ Risky │
+│ android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND │ Info  │
+│   android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS    │ Info  │
+│                android.permission.CALL_PHONE                 │ Risky │
+│                 android.permission.INTERNET                  │ Info  │
+│                android.permission.RECEIVE_SMS                │ Risky │
+│           android.permission.ACCESS_NETWORK_STATE            │ Info  │
+│            android.permission.FOREGROUND_SERVICE             │ Info  │
+│            android.permission.POST_NOTIFICATIONS             │ Info  │
+│      android.permission.INSTANT_APP_FOREGROUND_SERVICE       │ Info  │
+│    com.drnull.v5.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION    │ Info  │
+│                 android.permission.SEND_SMS                  │ Risky │
+└──────────────────────────────────────────────────────────────┴───────┘
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                     Activities                      ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│             com.drnull.v5.MainActivity              │
+│ com.google.android.gms.common.api.GoogleApiActivity │
+└─────────────────────────────────────────────────────┘
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                                         Services                                          ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│                                 com.drnull.v5.SmsService                                  │
+│                                  com.drnull.v5.FmService                                  │
+│                  com.google.firebase.messaging.FirebaseMessagingService                   │
+│                 com.google.firebase.components.ComponentDiscoveryService                  │
+│        com.google.android.datatransport.runtime.backends.TransportBackendDiscovery        │
+│ com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService │
+└───────────────────────────────────────────────────────────────────────────────────────────┘
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                                                Receivers                                                 ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│                                        com.drnull.v5.SmsReceiver                                         │
+│                                         com.drnull.v5.FmReceiver                                         │
+│                            com.google.firebase.iid.FirebaseInstanceIdReceiver                            │
+│ com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver │
+│                             androidx.profileinstaller.ProfileInstallReceiver                             │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                     Providers                     ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ com.google.firebase.provider.FirebaseInitProvider │
+│      androidx.startup.InitializationProvider      │
+└───────────────────────────────────────────────────┘
+
+[*] Performing YARA rule matching...
+>>> Rule name: NativeCode
+┏━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┓
+┃  Offset  ┃ Matched String/Byte ┃
+┡━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━┩
+│ 0x25214d │ b'lib/armeabi-v7a/' │
+│ 0x252c1a │  b'lib/arm64-v8a/'  │
+│ 0x42e2fa │ b'lib/armeabi-v7a/' │
+│ 0x42e37e │  b'lib/arm64-v8a/'  │
+│ 0x252671 │     b'lib/x86/'     │
+│ 0x253195 │   b'lib/x86_64/'    │
+│ 0x42e340 │     b'lib/x86/'     │
+│ 0x42e3c2 │   b'lib/x86_64/'    │
+└──────────┴─────────────────────┘
+ 
+
+[*] Performing library analysis...
+[*] Decompiling target APK file...
+There is no rules matched for TargetAPK/resources/lib/armeabi-v7a/libv5.so
+There is no rules matched for TargetAPK/resources/lib/arm64-v8a/libv5.so
+There is no rules matched for TargetAPK/resources/lib/x86/libv5.so
+There is no rules matched for TargetAPK/resources/lib/x86_64/libv5.so
+
+[*] Performing malware family detection. Please wait!!
+>>> Possible Malware Family: Sova
+
+[*] Performing source code analysis...
+
+[*] Preparing source files...
+Processing files... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+
+[*] Analyzing source codes. Please wait...
+Analyzing... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:01:00
+>>>> File Name: com/drnull/v5/SmsService.java
+>>>> Categories: ['SMS Bot']
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃           Patterns           ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ android.telephony.SmsMessage │
+│          SmsMessage          │
+└──────────────────────────────┘
+
+>>>> File Name: com/drnull/v5/FmService.java
+>>>> Categories: ['File Operations', 'Persistence/Managing']
+┏━━━━━━━━━━━━━━━━━┓
+┃    Patterns     ┃
+┡━━━━━━━━━━━━━━━━━┩
+│   getFilesDir   │
+│ startForeground │
+└─────────────────┘
+
+>>>> File Name: com/drnull/v5/SmsReceiver.java
+>>>> Categories: ['Persistence/Managing']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ startService │
+└──────────────┘
+
+>>>> File Name: com/drnull/v5/MainActivity.java
+>>>> Categories: ['SMS Bot', 'Information Gathering/Stealing', 'Network/Internet', 'Cryptography', 'Anti-VM/Anti-Debug']
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃            Patterns            ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ android.permission.RECEIVE_SMS │
+│  android.permission.READ_SMS   │
+│  android.permission.SEND_SMS   │
+│            SEND_SMS            │
+│          RECEIVE_SMS           │
+│            READ_SMS            │
+│       getSimOperatorName       │
+│          Content-Type          │
+│           SecretKey            │
+│          Build.BRAND           │
+│         getSimOperator         │
+│       getSimOperatorName       │
+└────────────────────────────────┘
+
+>>>> File Name: com/drnull/v5/SecretUtils.java
+>>>> Categories: ['Dynamic Class/Dex Loading', 'Cryptography']
+┏━━━━━━━━━━━━━━━━━━━━┓
+┃      Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━━┩
+│ System.loadLibrary │
+│     SecretKey      │
+└────────────────────┘
+
+>>>> File Name: com/drnull/v5/FmReceiver.java
+>>>> Categories: ['Persistence/Managing']
+┏━━━━━━━━━━━━━━━━━┓
+┃    Patterns     ┃
+┡━━━━━━━━━━━━━━━━━┩
+│  startService   │
+│ startForeground │
+└─────────────────┘
+
+>>>> File Name: com/google/firebase/FirebaseCommonRegistrar.java
+>>>> Categories: ['Anti-VM/Anti-Debug']
+┏━━━━━━━━━━━━━━━┓
+┃   Patterns    ┃
+┡━━━━━━━━━━━━━━━┩
+│ Build.PRODUCT │
+│  Build.BRAND  │
+│ Build.DEVICE  │
+└───────────────┘
+
+>>>> File Name: com/google/firebase/messaging/FirebaseMessaging.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns       ┃
+┡━━━━━━━━━━━━━━━━━━━━━━┩
+│  SharedPreferences   │
+│ getSharedPreferences │
+└──────────────────────┘
+
+>>>> File Name: h3/v.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: h3/y.java
+>>>> Categories: ['Dynamic Class/Dex Loading']
+┏━━━━━━━━━━━━━┓
+┃  Patterns   ┃
+┡━━━━━━━━━━━━━┩
+│ ClassLoader │
+└─────────────┘
+
+>>>> File Name: h3/r.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: h3/q.java
+>>>> Categories: ['Persistence/Managing']
+┏━━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━┩
+│ AccessibilityNodeInfo │
+└───────────────────────┘
+
+>>>> File Name: h3/t.java
+>>>> Categories: ['File Operations', 'Anti-VM/Anti-Debug']
+┏━━━━━━━━━━━━━━━━━━━━┓
+┃      Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━━┩
+│    getResources    │
+│ Build.MANUFACTURER │
+└────────────────────┘
+
+>>>> File Name: h3/n.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: h3/k.java
+>>>> Categories: ['Persistence/Managing']
+┏━━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━┩
+│ AccessibilityNodeInfo │
+└───────────────────────┘
+
+>>>> File Name: u1/d.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: u1/i.java
+>>>> Categories: ['File Operations', 'Cryptography']
+┏━━━━━━━━━━━━━━━━━━━━━┓
+┃      Patterns       ┃
+┡━━━━━━━━━━━━━━━━━━━━━┩
+│ java.io.InputStream │
+│      /storage/      │
+│      SecretKey      │
+└─────────────────────┘
+
+>>>> File Name: u1/g.java
+>>>> Categories: ['Camera']
+┏━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Patterns         ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ android.hardware.camera │
+└─────────────────────────┘
+
+>>>> File Name: b2/d.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+│   Class.forName   │
+└───────────────────┘
+
+>>>> File Name: d1/a.java
+>>>> Categories: ['Dynamic Class/Dex Loading', 'Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│    ClassLoader    │
+│ java.lang.reflect │
+│   Class.forName   │
+└───────────────────┘
+
+>>>> File Name: p4/d.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: p4/h.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━┓
+┃   Patterns    ┃
+┡━━━━━━━━━━━━━━━┩
+│ Class.forName │
+└───────────────┘
+
+>>>> File Name: e1/b.java
+>>>> Categories: ['Network/Internet', 'Cryptography']
+┏━━━━━━━━━━━━━━━┓
+┃   Patterns    ┃
+┡━━━━━━━━━━━━━━━┩
+│    loadUrl    │
+│ WebViewClient │
+│   SecretKey   │
+└───────────────┘
+
+>>>> File Name: e1/d.java
+>>>> Categories: ['SMS Bot', 'Phone Calls', 'Information Gathering/Stealing', 'Network/Internet', 'Cryptography', 'Anti-VM/Anti-Debug']
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                      Patterns                      ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│           android.permission.RECEIVE_SMS           │
+│            android.permission.READ_SMS             │
+│            android.permission.SEND_SMS             │
+│                     "send_sms"                     │
+│                      SEND_SMS                      │
+│                    RECEIVE_SMS                     │
+│                      READ_SMS                      │
+│ ContactsContract.CommonDataKinds.Phone.CONTENT_URI │
+│         android.provider.ContactsContract          │
+│                 getSimOperatorName                 │
+│                    Content-Type                    │
+│                     SecretKey                      │
+│                    Build.MODEL                     │
+│                    Build.BRAND                     │
+│                   getSimOperator                   │
+│                 getSimOperatorName                 │
+└────────────────────────────────────────────────────┘
+
+>>>> File Name: e1/a.java
+>>>> Categories: ['SMS Bot']
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃           Patterns           ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ android.telephony.SmsManager │
+│          SmsManager          │
+│       sendTextMessage        │
+└──────────────────────────────┘
+
+>>>> File Name: e1/g.java
+>>>> Categories: ['Cryptography']
+┏━━━━━━━━━━━┓
+┃ Patterns  ┃
+┡━━━━━━━━━━━┩
+│ SecretKey │
+└───────────┘
+
+>>>> File Name: e1/f.java
+>>>> Categories: ['Network/Internet']
+┏━━━━━━━━━━━━━━━┓
+┃   Patterns    ┃
+┡━━━━━━━━━━━━━━━┩
+│    loadUrl    │
+│ WebViewClient │
+└───────────────┘
+
+>>>> File Name: u2/b.java
+>>>> Categories: ['Dynamic Class/Dex Loading']
+┏━━━━━━━━━━━━━┓
+┃  Patterns   ┃
+┡━━━━━━━━━━━━━┩
+│ ClassLoader │
+└─────────────┘
+
+>>>> File Name: u2/c.java
+>>>> Categories: ['File Operations', 'Persistence/Managing']
+┏━━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━┩
+│     getResources      │
+│ AccessibilityNodeInfo │
+└───────────────────────┘
+
+>>>> File Name: d4/z.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ SharedPreferences │
+└───────────────────┘
+
+>>>> File Name: d4/p.java
+>>>> Categories: ['File Operations', 'Network/Internet']
+┏━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Patterns        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━┩
+│  java.io.InputStream   │
+│      java.net.URL      │
+│ java.net.URLConnection │
+│   url.openConnection   │
+│     openConnection     │
+│    getContentLength    │
+│     URLConnection      │
+└────────────────────────┘
+
+>>>> File Name: d4/d.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━━━━━━━━┓
+┃      Patterns       ┃
+┡━━━━━━━━━━━━━━━━━━━━━┩
+│ java.io.InputStream │
+└─────────────────────┘
+
+>>>> File Name: d4/d0.java
+>>>> Categories: ['Information Gathering/Stealing', 'Persistence/Managing']
+┏━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns       ┃
+┡━━━━━━━━━━━━━━━━━━━━━━┩
+│ getActiveNetworkInfo │
+│     isConnected      │
+│     newWakeLock      │
+└──────────────────────┘
+
+>>>> File Name: d4/x.java
+>>>> Categories: ['Information Gathering/Stealing', 'Persistence/Managing']
+┏━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns       ┃
+┡━━━━━━━━━━━━━━━━━━━━━━┩
+│ getActiveNetworkInfo │
+│     isConnected      │
+│     newWakeLock      │
+└──────────────────────┘
+
+>>>> File Name: d4/j.java
+>>>> Categories: ['Base64', 'Persistence/Managing']
+┏━━━━━━━━━━━━━━━━━━━━━┓
+┃      Patterns       ┃
+┡━━━━━━━━━━━━━━━━━━━━━┩
+│    Base64.decode    │
+│ android.util.Base64 │
+│    startService     │
+└─────────────────────┘
+
+>>>> File Name: d4/e0.java
+>>>> Categories: ['Persistence/Managing']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ startService │
+└──────────────┘
+
+>>>> File Name: y2/a.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: e2/b.java
+>>>> Categories: ['Dynamic Class/Dex Loading']
+┏━━━━━━━━━━━━━┓
+┃  Patterns   ┃
+┡━━━━━━━━━━━━━┩
+│ ClassLoader │
+└─────────────┘
+
+>>>> File Name: c2/b.java
+>>>> Categories: ['Base64', 'File Operations', 'Java Reflection', 'Cryptography']
+┏━━━━━━━━━━━━━━━━━━━━━┓
+┃      Patterns       ┃
+┡━━━━━━━━━━━━━━━━━━━━━┩
+│    Base64.decode    │
+│    Base64.encode    │
+│ android.util.Base64 │
+│ java.io.InputStream │
+│    getResources     │
+│   FileInputStream   │
+│  FileOutputStream   │
+│  java.lang.reflect  │
+│    Class.forName    │
+│ javax.crypto.Cipher │
+│      SecretKey      │
+│         AES         │
+└─────────────────────┘
+
+>>>> File Name: j4/b.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: y3/h.java
+>>>> Categories: ['Base64']
+┏━━━━━━━━━━━━━━━━━━━━━┓
+┃      Patterns       ┃
+┡━━━━━━━━━━━━━━━━━━━━━┩
+│    Base64.encode    │
+│ android.util.Base64 │
+└─────────────────────┘
+
+>>>> File Name: y3/c.java
+>>>> Categories: ['File Operations', 'Network/Internet']
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃          Patterns          ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│     SharedPreferences      │
+│        java.net.URL        │
+│ java.net.HttpURLConnection │
+│      setRequestMethod      │
+│      getResponseCode       │
+│     HttpURLConnection      │
+│       URLConnection        │
+└────────────────────────────┘
+
+>>>> File Name: z3/b.java
+>>>> Categories: ['Base64', 'File Operations']
+┏━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns       ┃
+┡━━━━━━━━━━━━━━━━━━━━━━┩
+│    Base64.decode     │
+│    Base64.encode     │
+│ android.util.Base64  │
+│  SharedPreferences   │
+│ getSharedPreferences │
+└──────────────────────┘
+
+>>>> File Name: h/e.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: h/h.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: h/j.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: h/i.java
+>>>> Categories: ['Dynamic Class/Dex Loading', 'Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│    ClassLoader    │
+│ java.lang.reflect │
+│   Class.forName   │
+└───────────────────┘
+
+>>>> File Name: f3/d.java
+>>>> Categories: ['Dynamic Class/Dex Loading']
+┏━━━━━━━━━━━━━┓
+┃  Patterns   ┃
+┡━━━━━━━━━━━━━┩
+│ ClassLoader │
+└─────────────┘
+
+>>>> File Name: x/s.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: x/g.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+│   Class.forName   │
+└───────────────────┘
+
+>>>> File Name: e0/a.java
+>>>> Categories: ['SMS Bot']
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃           Patterns           ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ android.telephony.SmsManager │
+│          SmsManager          │
+│       sendTextMessage        │
+└──────────────────────────────┘
+
+>>>> File Name: t/b.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: t/n.java
+>>>> Categories: ['File Operations', 'Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│   getResources    │
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: t/a.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: t/c.java
+>>>> Categories: ['File Operations', 'Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│   getResources    │
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: t/g.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: t/f.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: a4/c.java
+>>>> Categories: ['File Operations', 'Network/Internet']
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃          Patterns          ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│    java.io.InputStream     │
+│        java.net.URL        │
+│   java.net.URLConnection   │
+│ java.net.HttpURLConnection │
+│      getResponseCode       │
+│     getResponseMessage     │
+│     HttpURLConnection      │
+│       URLConnection        │
+└────────────────────────────┘
+
+>>>> File Name: n4/a.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━┓
+┃   Patterns    ┃
+┡━━━━━━━━━━━━━━━┩
+│ Class.forName │
+└───────────────┘
+
+>>>> File Name: h0/v0.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: h0/w1.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+│   Class.forName   │
+└───────────────────┘
+
+>>>> File Name: h0/a.java
+>>>> Categories: ['Persistence/Managing']
+┏━━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━┩
+│ AccessibilityNodeInfo │
+└───────────────────────┘
+
+>>>> File Name: h0/x1.java
+>>>> Categories: ['Persistence/Managing']
+┏━━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━┩
+│ AccessibilityNodeInfo │
+└───────────────────────┘
+
+>>>> File Name: h0/c.java
+>>>> Categories: ['Persistence/Managing']
+┏━━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━┩
+│ AccessibilityNodeInfo │
+└───────────────────────┘
+
+>>>> File Name: h0/r1.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+│   Class.forName   │
+└───────────────────┘
+
+>>>> File Name: h0/y0.java
+>>>> Categories: ['File Operations', 'Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│   getResources    │
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: h0/s1.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: i/a0.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: i/h0.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: i/d.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: i/a.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: i/o.java
+>>>> Categories: ['File Operations', 'Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│   getResources    │
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: i/i.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: i/w.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: j0/a.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: n0/b.java
+>>>> Categories: ['Dynamic Class/Dex Loading']
+┏━━━━━━━━━━━━━┓
+┃  Patterns   ┃
+┡━━━━━━━━━━━━━┩
+│ ClassLoader │
+└─────────────┘
+
+>>>> File Name: l0/t.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+│   Class.forName   │
+└───────────────────┘
+
+>>>> File Name: l0/i.java
+>>>> Categories: ['Persistence/Managing']
+┏━━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━┩
+│ AccessibilityNodeInfo │
+└───────────────────────┘
+
+>>>> File Name: c1/q.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+│   getPath    │
+└──────────────┘
+
+>>>> File Name: c1/m.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━┓
+┃ Patterns ┃
+┡━━━━━━━━━━┩
+│ getPath  │
+└──────────┘
+
+>>>> File Name: k3/b.java
+>>>> Categories: ['File Operations', 'Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━━━┓
+┃      Patterns       ┃
+┡━━━━━━━━━━━━━━━━━━━━━┩
+│ java.io.InputStream │
+│    getResources     │
+│   FileInputStream   │
+│  FileOutputStream   │
+│  java.lang.reflect  │
+└─────────────────────┘
+
+>>>> File Name: k3/g.java
+>>>> Categories: ['Base64']
+┏━━━━━━━━━━━━━━━━━━━━━┓
+┃      Patterns       ┃
+┡━━━━━━━━━━━━━━━━━━━━━┩
+│    Base64.encode    │
+│ android.util.Base64 │
+└─────────────────────┘
+
+>>>> File Name: o1/l.java
+>>>> Categories: ['Base64', 'Database']
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                Patterns                ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│             Base64.encode              │
+│          android.util.Base64           │
+│ android.database.sqlite.SQLiteDatabase │
+│          getWritableDatabase           │
+└────────────────────────────────────────┘
+
+>>>> File Name: o1/h.java
+>>>> Categories: ['Database']
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                Patterns                ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ android.database.sqlite.SQLiteDatabase │
+│              DELETE FROM               │
+└────────────────────────────────────────┘
+
+>>>> File Name: o1/o.java
+>>>> Categories: ['Database']
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                Patterns                ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│                execSQL                 │
+│ android.database.sqlite.SQLiteDatabase │
+└────────────────────────────────────────┘
+
+>>>> File Name: o1/i.java
+>>>> Categories: ['Database']
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                Patterns                ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ android.database.sqlite.SQLiteDatabase │
+└────────────────────────────────────────┘
+
+>>>> File Name: o1/f.java
+>>>> Categories: ['Database']
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                Patterns                ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ android.database.sqlite.SQLiteDatabase │
+└────────────────────────────────────────┘
+
+>>>> File Name: l4/b.java
+>>>> Categories: ['Dynamic Class/Dex Loading', 'Java Reflection']
+┏━━━━━━━━━━━━━━━┓
+┃   Patterns    ┃
+┡━━━━━━━━━━━━━━━┩
+│  ClassLoader  │
+│ Class.forName │
+└───────────────┘
+
+>>>> File Name: b0/k.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: b0/d.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: z0/a.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━┓
+┃   Patterns    ┃
+┡━━━━━━━━━━━━━━━┩
+│ Class.forName │
+└───────────────┘
+
+>>>> File Name: i0/k.java
+>>>> Categories: ['Persistence/Managing']
+┏━━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━┩
+│ AccessibilityNodeInfo │
+└───────────────────────┘
+
+>>>> File Name: i0/m.java
+>>>> Categories: ['Persistence/Managing']
+┏━━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━┩
+│ AccessibilityNodeInfo │
+└───────────────────────┘
+
+>>>> File Name: i0/l.java
+>>>> Categories: ['Persistence/Managing']
+┏━━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━┩
+│ AccessibilityNodeInfo │
+└───────────────────────┘
+
+>>>> File Name: i0/j.java
+>>>> Categories: ['Persistence/Managing']
+┏━━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━┩
+│ AccessibilityNodeInfo │
+└───────────────────────┘
+
+>>>> File Name: i0/i.java
+>>>> Categories: ['Persistence/Managing']
+┏━━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━┩
+│ AccessibilityNodeInfo │
+└───────────────────────┘
+
+>>>> File Name: n3/d.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+│   Class.forName   │
+└───────────────────┘
+
+>>>> File Name: n3/g.java
+>>>> Categories: ['Persistence/Managing']
+┏━━━━━━━━━━━━━━━━━━━━┓
+┃      Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━━┩
+│ Runtime.getRuntime │
+└────────────────────┘
+
+>>>> File Name: s3/e.java
+>>>> Categories: ['Base64']
+┏━━━━━━━━━━━━━━━━━━━━━┓
+┃      Patterns       ┃
+┡━━━━━━━━━━━━━━━━━━━━━┩
+│    Base64.encode    │
+│ android.util.Base64 │
+└─────────────────────┘
+
+>>>> File Name: e/l0.java
+>>>> Categories: ['Dynamic Class/Dex Loading', 'Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│    ClassLoader    │
+│ java.lang.reflect │
+│   Class.forName   │
+└───────────────────┘
+
+>>>> File Name: e/r0.java
+>>>> Categories: ['File Operations', 'Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns       ┃
+┡━━━━━━━━━━━━━━━━━━━━━━┩
+│ java.io.InputStream  │
+│  SharedPreferences   │
+│ getSharedPreferences │
+│       getPath        │
+│  java.lang.reflect   │
+└──────────────────────┘
+
+>>>> File Name: e/m.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: e/k0.java
+>>>> Categories: ['File Operations', 'Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│   getResources    │
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: e/c0.java
+>>>> Categories: ['Information Gathering/Stealing', 'Anti-VM/Anti-Debug']
+┏━━━━━━━━━━━━━┓
+┃  Patterns   ┃
+┡━━━━━━━━━━━━━┩
+│ getDeviceId │
+│ getDeviceId │
+└─────────────┘
+
+>>>> File Name: e/x0.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: e/w0.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: e/i0.java
+>>>> Categories: ['Information Gathering/Stealing', 'File Operations', 'Java Reflection', 'Anti-VM/Anti-Debug']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│    getDeviceId    │
+│   getResources    │
+│ java.lang.reflect │
+│ Build.FINGERPRINT │
+│    getDeviceId    │
+└───────────────────┘
+
+>>>> File Name: g4/c.java
+>>>> Categories: ['Anti-VM/Anti-Debug']
+┏━━━━━━━━━━━━━┓
+┃  Patterns   ┃
+┡━━━━━━━━━━━━━┩
+│ Build.BRAND │
+└─────────────┘
+
+>>>> File Name: v4/d.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: b4/a.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns       ┃
+┡━━━━━━━━━━━━━━━━━━━━━━┩
+│  SharedPreferences   │
+│ getSharedPreferences │
+└──────────────────────┘
+
+>>>> File Name: k0/d.java
+>>>> Categories: ['Database', 'File Operations', 'Network/Internet']
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                Patterns                ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ android.database.sqlite.SQLiteDatabase │
+│          java.io.InputStream           │
+│              java.net.URL              │
+│       java.net.HttpURLConnection       │
+│            setRequestMethod            │
+│            getResponseCode             │
+│              Content-Type              │
+│             openConnection             │
+│           HttpURLConnection            │
+│             URLConnection              │
+└────────────────────────────────────────┘
+
+>>>> File Name: m/c.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: j2/d.java
+>>>> Categories: ['Information Gathering/Stealing']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getInterface │
+└──────────────┘
+
+>>>> File Name: j2/j.java
+>>>> Categories: ['Dynamic Class/Dex Loading']
+┏━━━━━━━━━━━━━┓
+┃  Patterns   ┃
+┡━━━━━━━━━━━━━┩
+│ ClassLoader │
+└─────────────┘
+
+>>>> File Name: v0/e.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━━━━━┓
+┃     Patterns     ┃
+┡━━━━━━━━━━━━━━━━━━┩
+│ FileInputStream  │
+│ FileOutputStream │
+└──────────────────┘
+
+>>>> File Name: v0/b.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━━━━┓
+┃    Patterns     ┃
+┡━━━━━━━━━━━━━━━━━┩
+│ FileInputStream │
+└─────────────────┘
+
+>>>> File Name: v0/j.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━━━━━┓
+┃     Patterns     ┃
+┡━━━━━━━━━━━━━━━━━━┩
+│ FileInputStream  │
+│ FileOutputStream │
+└──────────────────┘
+
+>>>> File Name: f/f.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: g1/e.java
+>>>> Categories: ['Network/Internet']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ java.net.URL │
+└──────────────┘
+
+>>>> File Name: g1/b.java
+>>>> Categories: ['Base64', 'Database']
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                Patterns                ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│             Base64.decode              │
+│          android.util.Base64           │
+│ android.database.sqlite.SQLiteDatabase │
+└────────────────────────────────────────┘
+
+>>>> File Name: g1/d.java
+>>>> Categories: ['Network/Internet']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ java.net.URL │
+└──────────────┘
+
+>>>> File Name: g1/c.java
+>>>> Categories: ['Network/Internet']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ java.net.URL │
+└──────────────┘
+
+>>>> File Name: x0/z.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: x0/e1.java
+>>>> Categories: ['Persistence/Managing']
+┏━━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━┩
+│ AccessibilityNodeInfo │
+└───────────────────────┘
+
+>>>> File Name: x0/x0.java
+>>>> Categories: ['Dynamic Class/Dex Loading']
+┏━━━━━━━━━━━━━┓
+┃  Patterns   ┃
+┡━━━━━━━━━━━━━┩
+│ ClassLoader │
+└─────────────┘
+
+>>>> File Name: x0/k1.java
+>>>> Categories: ['Dynamic Class/Dex Loading']
+┏━━━━━━━━━━━━━┓
+┃  Patterns   ┃
+┡━━━━━━━━━━━━━┩
+│ ClassLoader │
+└─────────────┘
+
+>>>> File Name: x0/f1.java
+>>>> Categories: ['Persistence/Managing']
+┏━━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━┩
+│ AccessibilityNodeInfo │
+└───────────────────────┘
+
+>>>> File Name: s1/a.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns       ┃
+┡━━━━━━━━━━━━━━━━━━━━━━┩
+│  SharedPreferences   │
+│ getSharedPreferences │
+└──────────────────────┘
+
+>>>> File Name: a0/k.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+│   Class.forName   │
+└───────────────────┘
+
+>>>> File Name: a0/m.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━━━━━━━━┓
+┃      Patterns       ┃
+┡━━━━━━━━━━━━━━━━━━━━━┩
+│ java.io.InputStream │
+└─────────────────────┘
+
+>>>> File Name: a0/l.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: a0/h.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: a0/j.java
+>>>> Categories: ['File Operations', 'Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│  FileInputStream  │
+│ java.lang.reflect │
+│   Class.forName   │
+└───────────────────┘
+
+>>>> File Name: a0/i.java
+>>>> Categories: ['File Operations', 'Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│  FileInputStream  │
+│      getPath      │
+│ java.lang.reflect │
+│   Class.forName   │
+└───────────────────┘
+
+>>>> File Name: g2/b.java
+>>>> Categories: ['Dynamic Class/Dex Loading']
+┏━━━━━━━━━━━━━┓
+┃  Patterns   ┃
+┡━━━━━━━━━━━━━┩
+│ ClassLoader │
+└─────────────┘
+
+>>>> File Name: g2/a.java
+>>>> Categories: ['Information Gathering/Stealing']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getInterface │
+└──────────────┘
+
+>>>> File Name: y/e.java
+>>>> Categories: ['Information Gathering/Stealing', 'Persistence/Managing', 'Network/Internet']
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃               Patterns                ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│      android.app.KeyguardManager      │
+│ android.app.admin.DevicePolicyManager │
+│             device_policy             │
+│              WifiManager              │
+│     android.net.wifi.WifiManager      │
+└───────────────────────────────────────┘
+
+>>>> File Name: y/f.java
+>>>> Categories: ['File Operations', 'Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│   getResources    │
+│ java.lang.reflect │
+│   Class.forName   │
+└───────────────────┘
+
+>>>> File Name: i1/j.java
+>>>> Categories: ['Base64']
+┏━━━━━━━━━━━━━━━━━━━━━┓
+┃      Patterns       ┃
+┡━━━━━━━━━━━━━━━━━━━━━┩
+│    Base64.encode    │
+│ android.util.Base64 │
+└─────────────────────┘
+
+>>>> File Name: z/o.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: j/b2.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: j/s.java
+>>>> Categories: ['Persistence/Managing']
+┏━━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━┩
+│ AccessibilityNodeInfo │
+└───────────────────────┘
+
+>>>> File Name: j/i4.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: j/j1.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: j/a0.java
+>>>> Categories: ['Information Gathering/Stealing', 'File Operations', 'Cryptography']
+┏━━━━━━━━━━━━━━━━━━┓
+┃     Patterns     ┃
+┡━━━━━━━━━━━━━━━━━━┩
+│   getInterface   │
+│   getFilesDir    │
+│   getResources   │
+│ FileInputStream  │
+│ FileOutputStream │
+│    SecretKey     │
+└──────────────────┘
+
+>>>> File Name: j/r.java
+>>>> Categories: ['Base64']
+┏━━━━━━━━━━━━━━━━━━━━━┓
+┃      Patterns       ┃
+┡━━━━━━━━━━━━━━━━━━━━━┩
+│    Base64.encode    │
+│ android.util.Base64 │
+└─────────────────────┘
+
+>>>> File Name: j/q1.java
+>>>> Categories: ['File Operations', 'Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│   getResources    │
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: j/s3.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: j/p2.java
+>>>> Categories: ['File Operations', 'Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│   getResources    │
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: j/h2.java
+>>>> Categories: ['Persistence/Managing']
+┏━━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━┩
+│ AccessibilityNodeInfo │
+└───────────────────────┘
+
+>>>> File Name: j/g1.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: j/e4.java
+>>>> Categories: ['File Operations', 'Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│   getResources    │
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: j/m.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: j/v2.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: j/a3.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━━━━━━━━┓
+┃      Patterns       ┃
+┡━━━━━━━━━━━━━━━━━━━━━┩
+│ java.io.InputStream │
+└─────────────────────┘
+
+>>>> File Name: j/x1.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: j/u0.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: j/g3.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: j/m3.java
+>>>> Categories: ['Dynamic Class/Dex Loading']
+┏━━━━━━━━━━━━━┓
+┃  Patterns   ┃
+┡━━━━━━━━━━━━━┩
+│ ClassLoader │
+└─────────────┘
+
+>>>> File Name: j/z2.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: j/j.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: j/w2.java
+>>>> Categories: ['File Operations', 'Dynamic Class/Dex Loading']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+│  loadClass   │
+│ ClassLoader  │
+└──────────────┘
+
+>>>> File Name: j/u2.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: j/a4.java
+>>>> Categories: ['Dynamic Class/Dex Loading']
+┏━━━━━━━━━━━━━┓
+┃  Patterns   ┃
+┡━━━━━━━━━━━━━┩
+│ ClassLoader │
+└─────────────┘
+
+>>>> File Name: j/a2.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: j/w.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: j/q3.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+│   getPath    │
+└──────────────┘
+
+>>>> File Name: j/n3.java
+>>>> Categories: ['Dynamic Class/Dex Loading']
+┏━━━━━━━━━━━━━┓
+┃  Patterns   ┃
+┡━━━━━━━━━━━━━┩
+│ ClassLoader │
+└─────────────┘
+
+>>>> File Name: m1/b.java
+>>>> Categories: ['Base64', 'Database']
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                Patterns                ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│             Base64.encode              │
+│          android.util.Base64           │
+│ android.database.sqlite.SQLiteDatabase │
+│              DELETE FROM               │
+└────────────────────────────────────────┘
+
+>>>> File Name: o2/b.java
+>>>> Categories: ['Dynamic Class/Dex Loading']
+┏━━━━━━━━━━━━━┓
+┃  Patterns   ┃
+┡━━━━━━━━━━━━━┩
+│ ClassLoader │
+└─────────────┘
+
+>>>> File Name: o2/a.java
+>>>> Categories: ['Persistence/Managing']
+┏━━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━┩
+│ AccessibilityNodeInfo │
+└───────────────────────┘
+
+>>>> File Name: q2/c.java
+>>>> Categories: ['Dynamic Class/Dex Loading']
+┏━━━━━━━━━━━━━┓
+┃  Patterns   ┃
+┡━━━━━━━━━━━━━┩
+│ ClassLoader │
+└─────────────┘
+
+>>>> File Name: e3/j.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: v/d.java
+>>>> Categories: ['Dynamic Class/Dex Loading', 'Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│    ClassLoader    │
+│ java.lang.reflect │
+│   Class.forName   │
+└───────────────────┘
+
+>>>> File Name: v/f.java
+>>>> Categories: ['Dynamic Class/Dex Loading']
+┏━━━━━━━━━━━━━┓
+┃  Patterns   ┃
+┡━━━━━━━━━━━━━┩
+│ ClassLoader │
+└─────────────┘
+
+>>>> File Name: v2/d.java
+>>>> Categories: ['Persistence/Managing']
+┏━━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━┩
+│ AccessibilityNodeInfo │
+└───────────────────────┘
+
+>>>> File Name: v2/f.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: b3/d.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: t1/e.java
+>>>> Categories: ['Dynamic Class/Dex Loading']
+┏━━━━━━━━━━━━━┓
+┃  Patterns   ┃
+┡━━━━━━━━━━━━━┩
+│ ClassLoader │
+└─────────────┘
+
+>>>> File Name: t1/c.java
+>>>> Categories: ['Persistence/Managing']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ startService │
+└──────────────┘
+
+>>>> File Name: t1/f.java
+>>>> Categories: ['Dynamic Class/Dex Loading']
+┏━━━━━━━━━━━━━┓
+┃  Patterns   ┃
+┡━━━━━━━━━━━━━┩
+│  loadClass  │
+│ ClassLoader │
+└─────────────┘
+
+>>>> File Name: n1/e.java
+>>>> Categories: ['Base64']
+┏━━━━━━━━━━━━━━━━━━━━━┓
+┃      Patterns       ┃
+┡━━━━━━━━━━━━━━━━━━━━━┩
+│    Base64.encode    │
+│ android.util.Base64 │
+└─────────────────────┘
+
+>>>> File Name: n1/k.java
+>>>> Categories: ['Database']
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                Patterns                ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│                execSQL                 │
+│ android.database.sqlite.SQLiteDatabase │
+└────────────────────────────────────────┘
+
+>>>> File Name: n1/a.java
+>>>> Categories: ['Base64']
+┏━━━━━━━━━━━━━━━━━━━━━┓
+┃      Patterns       ┃
+┡━━━━━━━━━━━━━━━━━━━━━┩
+│    Base64.encode    │
+│ android.util.Base64 │
+└─────────────────────┘
+
+>>>> File Name: n1/j.java
+>>>> Categories: ['Database']
+┏━━━━━━━━━━━━━┓
+┃  Patterns   ┃
+┡━━━━━━━━━━━━━┩
+│ DELETE FROM │
+└─────────────┘
+
+>>>> File Name: n1/g.java
+>>>> Categories: ['Information Gathering/Stealing', 'Database']
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                Patterns                ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│          getActiveNetworkInfo          │
+│              isConnected               │
+│ android.database.sqlite.SQLiteDatabase │
+└────────────────────────────────────────┘
+
+>>>> File Name: z2/b.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: z2/a.java
+>>>> Categories: ['Dynamic Class/Dex Loading']
+┏━━━━━━━━━━━━━┓
+┃  Patterns   ┃
+┡━━━━━━━━━━━━━┩
+│ ClassLoader │
+└─────────────┘
+
+>>>> File Name: z2/g.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: c/a.java
+>>>> Categories: ['Persistence/Managing']
+┏━━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━┩
+│ AccessibilityNodeInfo │
+└───────────────────────┘
+
+>>>> File Name: g3/c.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: w1/e.java
+>>>> Categories: ['Dynamic Class/Dex Loading']
+┏━━━━━━━━━━━━━┓
+┃  Patterns   ┃
+┡━━━━━━━━━━━━━┩
+│  loadClass  │
+│ ClassLoader │
+└─────────────┘
+
+>>>> File Name: w1/r.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ SharedPreferences │
+└───────────────────┘
+
+>>>> File Name: t2/b.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: x1/l.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: x1/o.java
+>>>> Categories: ['Anti-VM/Anti-Debug']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ Build.FINGERPRINT │
+└───────────────────┘
+
+>>>> File Name: x1/x.java
+>>>> Categories: ['Information Gathering/Stealing']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getInterface │
+└──────────────┘
+
+>>>> File Name: w4/a.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: v3/e.java
+>>>> Categories: ['File Operations', 'Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│   getResources    │
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: v3/b.java
+>>>> Categories: ['Base64']
+┏━━━━━━━━━━━━━━━━━━━━━┓
+┃      Patterns       ┃
+┡━━━━━━━━━━━━━━━━━━━━━┩
+│ android.util.Base64 │
+└─────────────────────┘
+
+>>>> File Name: v3/d.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: v3/h.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns       ┃
+┡━━━━━━━━━━━━━━━━━━━━━━┩
+│  SharedPreferences   │
+│ getSharedPreferences │
+└──────────────────────┘
+
+>>>> File Name: f0/e.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+│   Class.forName   │
+└───────────────────┘
+
+>>>> File Name: r2/b.java
+>>>> Categories: ['Dynamic Class/Dex Loading']
+┏━━━━━━━━━━━━━┓
+┃  Patterns   ┃
+┡━━━━━━━━━━━━━┩
+│ ClassLoader │
+└─────────────┘
+
+>>>> File Name: q0/c.java
+>>>> Categories: ['Dynamic Class/Dex Loading', 'Java Reflection']
+┏━━━━━━━━━━━━━━━┓
+┃   Patterns    ┃
+┡━━━━━━━━━━━━━━━┩
+│  ClassLoader  │
+│ Class.forName │
+└───────────────┘
+
+>>>> File Name: o0/e.java
+>>>> Categories: ['File Operations']
+┏━━━━━━━━━━━━━━┓
+┃   Patterns   ┃
+┡━━━━━━━━━━━━━━┩
+│ getResources │
+└──────────────┘
+
+>>>> File Name: o0/b.java
+>>>> Categories: ['Persistence/Managing']
+┏━━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━┩
+│ AccessibilityNodeInfo │
+└───────────────────────┘
+
+>>>> File Name: o0/a.java
+>>>> Categories: ['Persistence/Managing']
+┏━━━━━━━━━━━━━━━━━━━━━━━┓
+┃       Patterns        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━┩
+│ AccessibilityNodeInfo │
+└───────────────────────┘
+
+>>>> File Name: k2/a.java
+>>>> Categories: ['Persistence/Managing', 'Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│    newWakeLock    │
+│ java.lang.reflect │
+└───────────────────┘
+
+>>>> File Name: v1/e.java
+>>>> Categories: ['Java Reflection']
+┏━━━━━━━━━━━━━━━━━━━┓
+┃     Patterns      ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ java.lang.reflect │
+└───────────────────┘
+
+
+[*] Looking for possible IP address patterns. Please wait...
+Processing sources... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+Processing resources... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+[!] There is no possible IP address pattern found!
+
+[*] Looking for URL values. Please wait...
+Processing sources... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+Processing resources... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                   Extracted URL Values                    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ https://firebase.google.com/support/privacy/init-options. │
+│                     https://%s/%s/%s                      │
+│        http://schemas.android.com/apk/res/android         │
+│                    http://example.com/                    │
+│                 https://plus.google.com/                  │
+│        http://www.apache.org/licenses/LICENSE-2.0         │
+│          http://schemas.android.com/apk/res-auto          │
+│              http://schemas.android.com/aapt              │
+│             http://schemas.android.com/tools              │
+└───────────────────────────────────────────────────────────┘
+
+[*] Checking basic security options...
+┏━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━┓
+┃   Debuggable    ┃ AllowBackup ┃ ClearTextTraffic ┃ NetworkSecurityConfig ┃
+┡━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━┩
+│ No entry found. │  Insecure   │     Insecure     │       Not found       │
+└─────────────────┴─────────────┴──────────────────┴───────────────────────┘
+
+[*] Checking application permission flags...
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃                       Permission                       ┃   Flag    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ com.drnull.v5.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION │ signature │
+└────────────────────────────────────────────────────────┴───────────┘
+
+[*] Searching for exported activities...
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃                      Activity                       ┃ Exported ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│             com.drnull.v5.MainActivity              │   true   │
+│ com.google.android.gms.common.api.GoogleApiActivity │  false   │
+└─────────────────────────────────────────────────────┴──────────┘
+
+[*] Searching for exported providers...
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃                     Provider                      ┃ Exported ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ com.google.firebase.provider.FirebaseInitProvider │  false   │
+│      androidx.startup.InitializationProvider      │  false   │
+└───────────────────────────────────────────────────┴──────────┘

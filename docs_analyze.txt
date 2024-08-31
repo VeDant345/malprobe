@@ -1,0 +1,78 @@
+
+       _______________
+      |@@@@|     |####|
+      |@@@@|     |####|
+      |@@@@|     |####|
+      \@@@@|     |####/
+       \@@@|     |###/
+        `@@|_____|##'
+             (O)
+        .-''''''''''-.             Congratulations!
+      .'  * * * * * * `.
+     :  *             * :                  You just analyzed your 1000th sample :)
+    : ~ Malware Hunter ~ :
+    :         of         :
+    :    ~ The Year ~    :             You won 100BTC!!!
+     :  *             * :
+      `.  * * * * * * .'
+        `-..........-'
+
+[*] Analyzing: d3dee02788568879bc2a3968bd381c0fc5f121bb3c2f46224fd85566282f6837.pdf
+[*] Performing PDF analysis...
+
+[*] Gathering meta information...
+             * Meta Information *             
+┏━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃     Key      ┃            Value            ┃
+┡━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│    Title     │        b'Book_5763'         │
+│    Author    │        b'Author_642'        │
+│   Subject    │        b'Subject_91'        │
+│   Keywords   │ b'history, art, literature' │
+│   Creator    │     b'LibrarySystem_30'     │
+│   Producer   │       b'Producer_16'        │
+│ CreationDate │      b'20240209000000'      │
+│   ModDate    │      b'20240211000000'      │
+└──────────────┴─────────────────────────────┘
+
+[*] Gathering PDF catalog...
+  * PDF  
+Catalog *
+┏━━━━━━━┓
+┃  Key  ┃
+┡━━━━━━━┩
+│ Pages │
+└───────┘
+
+[*] Searching for suspicious strings...
+   * Suspicious    
+     Strings *     
+┏━━━━━━━━━┳━━━━━━━┓
+┃ String  ┃ Count ┃
+┡━━━━━━━━━╇━━━━━━━┩
+│  /URI   │   4   │
+│ /Action │   2   │
+│   *7z   │   1   │
+└─────────┴───────┘
+
+[*] Looking for embedded URL's via Regex...
+                                      * Embedded URL's *                                      
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                                            URL                                             ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ https://monitor.clickcease.com//tracker/tracker?id=go2024mGEEFIqIrNt99&adpos=&nw=a&url=ht… │
+└────────────────────────────────────────────────────────────────────────────────────────────┘
+[*] Performing PDF stream analysis...
+[*] Analyzing total objects...
+[*] Extracted URI from stream: 
+https://monitor.clickcease.com//tracker/tracker?id=go2024mGEEFIqIrNt99&adpos=&nw=a&url=https:/
+/proniklsu63nenick.com?utm_content=gekimLhCXs&session_id=Gm49aDxCakEVdkYs9u3P&id=071kw&filter=
+MrsnfcBLvp-JDKPJ&lang=de&locale=US
+[*] Extracted URI from stream: 
+https://monitor.clickcease.com//tracker/tracker?id=go2024mGEEFIqIrNt99&adpos=&nw=a&url=https:/
+/proniklsu63nenick.com?utm_content=gekimLhCXs&session_id=Gm49aDxCakEVdkYs9u3P&id=071kw&filter=
+MrsnfcBLvp-JDKPJ&lang=de&locale=US
+
+[*] Performing YARA rule matching...
+There is no rules matched for 
+d3dee02788568879bc2a3968bd381c0fc5f121bb3c2f46224fd85566282f6837.pdf

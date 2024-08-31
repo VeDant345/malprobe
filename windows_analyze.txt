@@ -1,0 +1,220 @@
+
+                   <------------------------------------------>
+                   <  This tool is very dangerous. Be careful >
+           __      <   while using it!!                       >
+         _|  |_    <------------------------------------------>
+       _|      |_   /
+      |  _    _  | /
+      | |_|  |_| |
+   _  |  _    _  |  _
+  |_|_|_| |__| |_|_|_|
+    |_|_        _|_|   <- Mr. Virus
+      |_|      |_| 
+
+
+[*] Analyzing: malware.exe
+[*] Target OS: Windows
+
+[*] File Type: Windows Executable
+
+[*] Performing extraction of imports and exports. Please wait...
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃ Functions or Strings about Registry ┃  Address  ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│             RegCloseKey             │ 0x10f9ecc │
+└─────────────────────────────────────┴───────────┘
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃ Functions or Strings about Networking/Web ┃  Address  ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│                WSAStartup                 │ 0x10f9efc │
+└───────────────────────────────────────────┴───────────┘
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃ Functions or Strings about Process ┃  Address  ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│            ExitProcess             │ 0x10f9eb8 │
+└────────────────────────────────────┴───────────┘
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃ Functions or Strings about Dll/Resource Handling ┃  Address  ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│                   LoadLibraryA                   │ 0x10f9ebc │
+└──────────────────────────────────────────────────┴───────────┘
+                        * WARNING *                         
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃ Functions or Strings about Evasion/Bypassing ┃  Address  ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│               GetModuleHandleA               │ 0x10f9eb0 │
+│                GetProcAddress                │ 0x10f9eb4 │
+│                 LoadLibraryA                 │ 0x10f9ebc │
+└──────────────────────────────────────────────┴───────────┘
+                         * WARNING *                         
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃ Functions or Strings about System/Persistence ┃  Address  ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│                 ShellExecuteA                 │ 0x10f9ee4 │
+└───────────────────────────────────────────────┴───────────┘
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃ Functions or Strings about COMObject ┃  Address  ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│            CoInitializeEx            │ 0x10f9ef4 │
+└──────────────────────────────────────┴───────────┘
+                          * WARNING *                           
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃ Functions or Strings about Information Gathering ┃  Address  ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│               GetFileVersionInfoA                │ 0x10f9eec │
+└──────────────────────────────────────────────────┴───────────┘
+┏━━━━━━━━━━━━━━━━━━┓
+┃ Linked DLL Files ┃
+┡━━━━━━━━━━━━━━━━━━┩
+│   kernel32.dll   │
+│    user32.dll    │
+│   advapi32.dll   │
+│   oleaut32.dll   │
+│    gdi32.dll     │
+│   shell32.dll    │
+│   version.dll    │
+│    ole32.dll     │
+│    WS2_32.dll    │
+│   CRYPT32.dll    │
+│   SHLWAPI.dll    │
+│   gdiplus.dll    │
+│   SETUPAPI.dll   │
+│    ntdll.dll     │
+└──────────────────┘
+
+[*] Performing special artifact detection. Please wait...
+[!] There is no special artifact pattern found!
+
+
+[*] Looking for: Windows Registry Key
+[!] There is no pattern about registry keys!
+
+
+[*] Looking for: Interesting String Patterns
+┏━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Interesting Patterns ┃
+┡━━━━━━━━━━━━━━━━━━━━━━┩
+│         mvbS         │
+│         Vba          │
+│         vbE          │
+│         VBE          │
+│         VBe          │
+│     requestedExe     │
+│       ShellExe       │
+│        i8KEXe        │
+│     Ay3Info.exe      │
+│     kernel32.dll     │
+│      user32.dll      │
+│     advapi32.dll     │
+│     oleaut32.dll     │
+│      gdi32.dll       │
+│     shell32.dll      │
+│     version.dll      │
+│      ole32.dll       │
+│      WS2_32.dll      │
+│     CRYPT32.dll      │
+│     SHLWAPI.dll      │
+│     gdiplus.dll      │
+│     SETUPAPI.dll     │
+│      ntdll.dll       │
+│         EBAT         │
+│         cMd          │
+│         tmp          │
+│         Cfg          │
+│         Lnk          │
+│          7z          │
+│          7Z          │
+│        UcP7Z         │
+│         f7z          │
+│         T7z          │
+│         G7z          │
+│        JNe7Z         │
+│         _7Z          │
+│         O97Z         │
+│         hf7z         │
+│         o7z          │
+│        PTSa7z        │
+│         H7z          │
+│         t7Z          │
+│         57z          │
+│         f77Z         │
+│         B7Z          │
+│         bA7z         │
+│       GaDEI7Z        │
+│         U7Z          │
+│         l07Z         │
+└──────────────────────┘
+
+[*] Performing embedded PE file detection...
+[!] There is no embedded PE file!
+
+
+[*] Performing YARA rule matching...
+>>> Rule name: Big_Numbers1
+┏━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Offset  ┃         Matched String/Byte         ┃
+┡━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ 0xd0137 │ b'732b6ec148d290c0a071efd1dac8e288' │
+└─────────┴─────────────────────────────────────┘
+ 
+>>> Rule name: win_registry
+┏━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┓
+┃ Offset  ┃ Matched String/Byte ┃
+┡━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━┩
+│ 0xd3d44 │   b'advapi32.dll'   │
+│ 0xd3e21 │   b'RegCloseKey'    │
+│ 0xd3e21 │   b'RegCloseKey'    │
+└─────────┴─────────────────────┘
+ 
+>>> Rule name: Str_Win32_Winsock2_Library
+┏━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┓
+┃ Offset  ┃ Matched String/Byte ┃
+┡━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━┩
+│ 0xd3d8a │    b'WS2_32.dll'    │
+└─────────┴─────────────────────┘
+ 
+                                                   * Informations About Sections *                                                    
+┏━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Section Name ┃ Virtual Size ┃ Virtual Address ┃ Size Of Raw Data ┃ Pointer to Raw Data ┃                  Entropy                  ┃
+┡━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│              │   0x10b000   │     0x1000      │     0x73600      │        0x400        │ 7.9994706694456195 Possible obfuscation!! │
+│              │   0x27000    │    0x10c000     │     0x12200      │       0x73a00       │ 7.992689637925963 Possible obfuscation!!  │
+│              │    0x4000    │    0x133000     │      0x800       │       0x85c00       │ 7.313854147166648 Possible obfuscation!!  │
+│              │   0x11000    │    0x137000     │       0x0        │       0x86400       │                    0.0                    │
+│              │    0x9000    │    0x148000     │      0x6400      │       0x86400       │ 7.9863647394928785 Possible obfuscation!! │
+│    .rsrc     │   0x11000    │    0x151000     │     0x10e00      │       0x8c800       │             4.305657895869023             │
+│              │   0x794000   │    0x162000     │     0x32800      │       0x9d600       │ 7.998779013147024 Possible obfuscation!!  │
+│    .data     │   0x22c000   │    0x8f6000     │     0x22b400     │       0xcfe00       │ 7.985716262381379 Possible obfuscation!!  │
+└──────────────┴──────────────┴─────────────────┴──────────────────┴─────────────────────┴───────────────────────────────────────────┘
+
+[*] Extracting and parsing function informations. Please wait...
+>>> Number of functions: 1
+Processing... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+┏━━━━━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━┓
+┃  Function Name  ┃ Size ┃ Offset ┃ Xrefs From This Address ┃ Xrefs To This Address ┃
+┡━━━━━━━━━━━━━━━━━╇━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━┩
+│ malware.__entry │  2   │  0x0   │            1            │           0           │
+└─────────────────┴──────┴────────┴─────────────────────────┴───────────────────────┘
+
+-> Statistics for: malware.exe
+>> Time Date Stamp: Mon Feb 12 07:50:19 2024 UTC
+>>>> MD5: 491269ddd29259be9d305f206942e4c7
+>>>> SHA1: 1030a0f76cd8026218a495f022032f11564b8291
+>>>> SHA256: d9bd09c0cd6d38d20bc8a56d920b9c8cde800fe079837b11e953b5c6a3823208
+>> IMPHASH: 59aeb10eab81e92b5597d86d6e338bce
+┏━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃      Categories       ┃ Number of Functions or Strings ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│  All Imports,Exports  │               17               │
+│  Categorized Imports  │               10               │
+│       Registry        │               1                │
+│    Networking/Web     │               1                │
+│        Process        │               1                │
+│ Dll/Resource Handling │               1                │
+│   Evasion/Bypassing   │               3                │
+│  System/Persistence   │               1                │
+│       COMObject       │               1                │
+│ Information Gathering │               1                │
+└───────────────────────┴────────────────────────────────┘
+This file might be obfuscated or encrypted. Try --packer to scan this file for packers.
+You can also use --hashscan to scan this file.
